@@ -80,3 +80,6 @@ def get_landmarks(folder_path):
 folder_paths = ['images']
 for folder_path in folder_paths:
     get_landmarks(folder_path)
+
+data = pd.DataFrame(results)
+data.to_csv('pose_data.csv', index=False)
